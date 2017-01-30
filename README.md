@@ -13,10 +13,6 @@ On server1:
 gluster peer probe 192.168.10.22
 gluster peer status
 mkdir /DATA
-gluster volume create DATA replica 2 192.168.10.21:/DATA 192.168.10.22:/DATA
-gluster volume create DATA force replica 2 192.168.10.21:/DATA 192.168.10.22:/DATA
-gluster volume create DATA replica 2 force 192.168.10.21:/DATA 192.168.10.22:/DATA
-gluster volume create DATA replica 2 192.168.10.21:/DATA 192.168.10.22:/DATA
 gluster volume create DATA replica 2 192.168.10.21:/DATA 192.168.10.22:/DATA force
 gluster volume start DATA
 gluster volume info
