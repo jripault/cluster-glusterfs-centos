@@ -28,3 +28,12 @@ mkdir /DATA
 gluster volume info
 cd /DATA/
 ```
+
+On client:
+
+```
+mkdir /DATA
+mount -t glusterfs 192.168.10.21:/DATA /DATA
+df -hT | grep DATA
+touch /DATA/test
+```
